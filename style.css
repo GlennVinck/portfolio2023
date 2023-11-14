@@ -79,6 +79,7 @@ nav ul li a {
   text-align: center;
   z-index: 10;
   pointer-events: none;
+  margin-bottom: 150px;
 }
 
 .scroll-icon {
@@ -140,6 +141,7 @@ button {
   padding: 0.6rem 1.4rem;
   margin-top: 16px;
   cursor: pointer;
+  pointer-events: initial;
 }
 
 button a {
@@ -258,7 +260,7 @@ h5 {
 
 .blob {
   position: fixed;
-  background: #ffcc81;
+  background: #483881;
   top: 50%;
   width: 100px;
   height: 100px;
@@ -271,7 +273,7 @@ h5 {
   filter: url("#goo");
   position: absolute;
   left: calc(50vw - 250px);
-  top: calc(50vh - 420px);
+  top: calc(50vh - 480px);
   width: 500px;
   height: 500px;
   background: transparent;
@@ -286,7 +288,7 @@ h5 {
 .four {
   filter: blur(20px);
   position: fixed;
-  background: #fff4e3 !important;
+  background: #ffeaca !important;
   left: calc(var(--mouse-x) * 0.27px);
   top: calc(var(--mouse-y) * 0.27px);
   margin-left: 120px;
