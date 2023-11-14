@@ -6,7 +6,13 @@
   font-family: "Inconsolata", monospace;
   line-height: 1;
   color: #eaeaea;
-  background-color: #0b0b0b;
+  background-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,13 +27,17 @@ body {
 
 nav {
   width: 100%;
+  height: 48px;
   padding: 8px 0;
   position: fixed;
   top: 0;
   backdrop-filter: blur(10px);
   background-color: rgba(11, 11, 11, 0.4);
-  box-shadow: 0 12px 25px 8px #0b0b0b;
-  z-index: 1;
+  box-shadow: 0 12px 25px 8px #000000;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav ul {
@@ -67,6 +77,8 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  z-index: 10;
+  pointer-events: none;
 }
 
 .scroll-icon {
@@ -240,4 +252,50 @@ h5 {
   padding: 10px 20px;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*hero gradient background*/
+
+.blob {
+  position: fixed;
+  background: #ffcc81;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.blobs {
+  filter: url("#goo");
+  position: absolute;
+  left: calc(50vw - 250px);
+  top: calc(50vh - 420px);
+  width: 500px;
+  height: 500px;
+  background: transparent;
+  border: 3px solid;
+  border-color: transparent;
+}
+
+.one {
+  left: 50%;
+  filter: blur(15px);
+}
+.four {
+  filter: blur(20px);
+  position: fixed;
+  background: #fff4e3 !important;
+  left: calc(var(--mouse-x) * 0.27px);
+  top: calc(var(--mouse-y) * 0.27px);
+  margin-left: 120px;
+  margin-top: 120px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+.vsfr {
+  opacity: 1 !important;
 }
