@@ -44,24 +44,24 @@ $(".blobs").mouseenter(function () {
 
 //service info animations
 
-const serviceHeader = document.querySelectorAll(".service-header");
+// const serviceHeader = document.querySelectorAll(".service-header");
 
-serviceHeader.forEach((header) => {
-  header.addEventListener("mouseover", showServiceInfo);
-  header.addEventListener("mouseout", hideServiceInfo);
-});
+// serviceHeader.forEach((header) => {
+//   header.addEventListener("mouseover", showServiceInfo);
+//   header.addEventListener("mouseout", hideServiceInfo);
+// });
 
-function showServiceInfo(event) {
-  const serviceInfo = event.target.nextElementSibling;
+// function showServiceInfo(event) {
+//   const serviceInfo = event.target.nextElementSibling;
 
-  serviceInfo.style.color = "red";
-}
+//   serviceInfo.style.color = "red";
+// }
 
-function hideServiceInfo(event) {
-  const serviceInfo = event.target.nextElementSibling;
+// function hideServiceInfo(event) {
+//   const serviceInfo = event.target.nextElementSibling;
 
-  serviceInfo.style.color = "white";
-}
+//   serviceInfo.style.color = "white";
+// }
 
 // mailto button
 
