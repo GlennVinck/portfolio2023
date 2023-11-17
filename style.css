@@ -55,9 +55,14 @@ nav ul li {
 nav ul li a {
   font-family: "Karla", sans-serif;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   color: #ffffff;
+  transition: all 0.1s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ffcc81;
 }
 
 #landing {
@@ -157,6 +162,10 @@ button {
 button a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.mailto {
+  color: #000000;
 }
 
 #portfolio {
