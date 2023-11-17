@@ -83,8 +83,7 @@ nav ul li a:hover {
   text-align: center;
   z-index: 10;
   pointer-events: none;
-  margin-bottom: 150px;
-  margin-top: 200px;
+  margin: 200px 3rem 150px 3rem;
 }
 
 .scroll-icon {
@@ -113,7 +112,6 @@ h3 {
   font-family: "Karla", sans-serif;
   font-size: 2.8rem;
   color: #ffffff;
-  padding: 0;
   margin: 0;
   line-height: 3rem;
 }
@@ -175,12 +173,14 @@ button a {
   justify-content: center;
   text-align: center;
   padding: 2rem;
+  width: 100%;
 }
 
 .title-header {
   line-height: 1;
   margin: 64px 0 16px 0;
   max-width: 500px;
+  padding: 0 1rem;
 }
 
 .items-container {
@@ -190,6 +190,7 @@ button a {
   justify-content: center;
   flex-wrap: wrap;
   text-align: left;
+  width: 100%;
 }
 
 .card-wrapper {
@@ -437,14 +438,18 @@ h5 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: left;
   padding: 6rem 4rem;
   width: 100vw;
+  max-width: 1200px;
+}
+
+.services-title {
+  margin-right: 2rem;
 }
 
 #services > div {
-  width: 50%;
   max-width: 480px;
 }
 
@@ -475,7 +480,7 @@ h5 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1rem 0 2.2rem 0;
+  padding: 1rem 1rem 2.2rem 1rem;
   margin: 0 0 6rem 0;
   width: 900px;
   background-color: #0b0b0b;
@@ -613,4 +618,106 @@ footer {
 .screens img {
   width: 200px;
   object-fit: contain;
+}
+
+@media (max-width: 1079px) {
+  .blobs {
+    display: none;
+  }
+
+  #landing svg {
+    display: none;
+  }
+
+  #portfolio {
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .items-container {
+    display: initial;
+  }
+
+  .card-wrapper {
+    margin: 0 2rem;
+  }
+
+  .card-wrapper div {
+    margin: 0 0 1rem 0;
+    width: 100%;
+  }
+
+  .about {
+    flex-direction: column;
+    margin: 6rem 2rem;
+    align-items: center;
+    text-align: left;
+  }
+
+  .about-content {
+    align-items: center;
+    text-align: left;
+  }
+
+  .about-content h4 {
+    margin-left: 1rem;
+  }
+
+  .skills {
+    margin: 1rem 2rem 6rem 2rem;
+  }
+
+  .project {
+    flex-direction: column;
+    margin: 6rem 2rem;
+    align-items: center;
+  }
+
+  .project-header img {
+    height: 400px;
+    object-fit: contain;
+  }
+
+  .project-content {
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .screens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 1rem 0 8rem 0;
+  }
+}
+
+@media (max-width: 950px) {
+  #services {
+    flex-direction: column;
+    padding: 6rem 2rem;
+  }
+
+  .services-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  .contact-card {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 500px) {
+  #landing {
+    justify-content: flex-start;
+  }
+
+  .screens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
