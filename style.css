@@ -90,6 +90,9 @@ nav ul li a:hover {
 .scroll-icon {
   position: absolute;
   bottom: 24px;
+}
+
+.scroll-icon img {
   width: 30px;
   height: 48px;
 }
@@ -278,19 +281,19 @@ button a {
 }
 
 .card1 {
-  background-image: url(./img/ugc-card.png);
+  background-image: url(./img/ugc-card.webp);
 }
 
 .card2 {
-  background-image: url(./img/yogism/yogism-card.png);
+  background-image: url(./img/yogism-card.webp);
 }
 
 .card3 {
-  background-image: url(./img/no21-card.png);
+  background-image: url(./img/no21-card.webp);
 }
 
 .card4 {
-  background-image: url(./img/holohand-card.png);
+  background-image: url(./img/holohand-card.webp);
 }
 
 h5 {
