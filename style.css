@@ -90,6 +90,8 @@ nav ul li a:hover {
 .scroll-icon {
   position: absolute;
   bottom: 24px;
+  width: 30px;
+  height: 48px;
 }
 
 h1 {
@@ -261,6 +263,11 @@ button a {
 
 .btn-extern p {
   margin: 0 6px;
+}
+
+.btn-extern img {
+  width: 24px;
+  height: 24px;
 }
 
 .card-wrapper div {
