@@ -721,6 +721,10 @@ footer {
 }
 
 @media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+
   #landing {
     justify-content: flex-start;
   }
@@ -730,5 +734,17 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  #hero-card {
+    margin: 125px 1rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
   }
 }
