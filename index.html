@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Google Tag Manager -->
-    <script>
+    <script async>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -148,11 +148,11 @@
       <div class="btn-wrapper">
         <button class="btn-extern behance" onclick="redirectToExternalSite()">
           <a>Behance</a>
-          <img src="./img/arrow-up-right.svg" alt="arrow" />
+          <img loading="lazy" src="./img/arrow-up-right.svg" alt="arrow" />
         </button>
         <button class="btn-extern linkedin">
           <a>LinkedIn</a>
-          <img src="./img/arrow-up-right.svg" alt="arrow" />
+          <img loading="lazy" src="./img/arrow-up-right.svg" alt="arrow" />
         </button>
       </div>
     </section>
@@ -210,6 +210,6 @@
       </div>
     </section>
     <footer></footer>
-    <script type="module" src="/main.js"></script>
+    <script defer type="module" src="/main.js"></script>
   </body>
 </html>
